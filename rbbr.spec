@@ -3,12 +3,12 @@
 Summary:	Ruby Class Browser
 Summary(pl):	Przegl±darka klas dla Ruby
 Name:		rbbr
-Version:	0.4.0
+Version:	0.6.0
 Release:	1
 License:	GPL
 Group:		Development/Languages
 Source0:	http://dl.sourceforge.net/ruby-gnome2/%{name}-%{version}-withapi.tar.gz
-# Source0-md5:	7e8ebe379414194f0f9680810bf346c2
+# Source0-md5:	2cb0648b87590db04d702f7fd26f8c8f
 URL:		http://ruby-gnome2.sourceforge.jp/hiki.cgi?rbbr
 BuildRequires:	ruby
 Requires:	ruby-gnome2
