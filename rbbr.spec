@@ -1,5 +1,3 @@
-%define	ruby_archdir	%(ruby -r rbconfig -e 'print Config::CONFIG["archdir"]')
-%define	ruby_rubylibdir	%(ruby -r rbconfig -e 'print Config::CONFIG["rubylibdir"]')
 Summary:	Ruby Class Browser
 Summary(pl):	Przegl±darka klas dla Ruby
 Name:		rbbr
@@ -10,6 +8,7 @@ Group:		Development/Languages
 Source0:	http://dl.sourceforge.net/ruby-gnome2/%{name}-%{version}-withapi.tar.gz
 # Source0-md5:	2cb0648b87590db04d702f7fd26f8c8f
 URL:		http://ruby-gnome2.sourceforge.jp/hiki.cgi?rbbr
+BuildRequires:	rpmbuild(macros) >= 1.272
 BuildRequires:	ruby
 Requires:	ruby-gnome2
 BuildArch:	noarch
@@ -24,12 +23,12 @@ Przegl±darka klas napisana w jêzyku Ruby z u¿yciem Gnome2.
 %prep
 %setup -q -n %{name}-%{version}-withapi
 
+%build
 ruby install.rb config \
 	--std-ruby=%{ruby_rubylibdir} \
 	--site-ruby=%{ruby_rubylibdir} \
 	--so-dir=%{ruby_archdir}
 
-%build
 ruby install.rb setup
 
 %install
