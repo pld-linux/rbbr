@@ -8,10 +8,11 @@ Group:		Development/Languages
 Source0:	http://dl.sourceforge.net/ruby-gnome2/%{name}-%{version}-withapi.tar.gz
 # Source0-md5:	2cb0648b87590db04d702f7fd26f8c8f
 URL:		http://ruby-gnome2.sourceforge.jp/hiki.cgi?rbbr
-BuildRequires:	rpmbuild(macros) >= 1.272
+BuildRequires:	rpmbuild(macros) >= 1.277
 BuildRequires:	ruby-modules
 Requires:	ruby-gnome2
 BuildArch:	noarch
+%ruby_mod_ver_requires_eq
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
