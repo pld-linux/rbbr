@@ -1,5 +1,5 @@
 Summary:	Ruby Class Browser
-Summary(pl.UTF-8):   Przeglądarka klas dla Ruby
+Summary(pl.UTF-8):	Przeglądarka klas dla Ruby
 Name:		rbbr
 Version:	0.6.0
 Release:	2
