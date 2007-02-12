@@ -1,5 +1,5 @@
 Summary:	Ruby Class Browser
-Summary(pl):	Przegl±darka klas dla Ruby
+Summary(pl.UTF-8):   PrzeglÄ…darka klas dla Ruby
 Name:		rbbr
 Version:	0.6.0
 Release:	2
@@ -18,8 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Class Browser written in Ruby with Gnome2.
 
-%description -l pl
-Przegl±darka klas napisana w jêzyku Ruby z u¿yciem Gnome2.
+%description -l pl.UTF-8
+PrzeglÄ…darka klas napisana w jÄ™zyku Ruby z uÅ¼yciem Gnome2.
 
 %prep
 %setup -q -n %{name}-%{version}-withapi
